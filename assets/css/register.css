@@ -1,0 +1,98 @@
+.signInContainer {
+
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+
+}
+
+.signInContainer .column form {
+
+    display: flex;
+    flex-direction: column; 
+    padding-top: 30px;    
+    /* if we keep this below column ka styling apply nai hoga becoz it will inherit flex properties */
+}
+
+.signInContainer .column {
+    flex-grow: 1;
+    background-color: #fff;
+    min-height: 300px;
+    padding: 20px 35px;
+    box-shadow: black #000 1px 2px;
+    flex-grow: 0;
+    width: 450px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.signInContainer .column .logo{
+
+    padding: 0px 35%;
+    
+}
+
+.signInContainer.column .header {
+
+    padding-left: 20%;
+    padding-bottom: 40px;
+    margin-left: 10px;
+    margin-top: 6px;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.signInContainer .column .header h4 {
+
+    font-weight: 400;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.signInContainer .column .logo img {
+
+    width: 100px;
+    background-color: #fff;
+    
+}
+
+.signInContainer .column .loginForm input:not(#submitButton){
+
+    font-size: 14px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #dedede;
+
+}
+
+.signInContainer .column .loginForm input[type="submit"]{
+
+    font-size: 14px;
+    margin: 10px 0px;
+    background: #4285f4;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 0px;
+}
+
+.signInContainer .column a {
+
+    color: #000;
+    font-size: small;
+    text-decoration: none;
+}
+
+.errorMessage{
+
+    color: #f00 ;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+

@@ -1,0 +1,1009 @@
+html, body {
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#pageContainer {
+
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+
+}
+
+#mastHeadContainer{
+
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 16px;                   /* top and side */
+    box-sizing: border-box;             /* this ensures that right padding bahar na chale jaye */
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    z-index: 1;                          /* makes sure ki woh part is top of other*/
+    display: flex;                       /* uses flexbox */
+    align-items: center;                    /* align karega sabhko vertically*/
+
+}
+
+#mastHeadContainer button:not(.searchButton) {
+
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+
+}
+
+#mastHeadContainer button img {
+
+    width: 90%;
+    margin-right: 8px;
+    margin-bottom: 6px;
+
+}
+
+/* #mastHeadContainer .logoContainer{
+
+    width: 100px;
+
+} */
+
+#mastHeadContainer .logoContainer img{
+    
+    /* height: 75px; */
+    width: 100px;
+    padding-left: 6px;
+}
+
+#mastHeadContainer .searchBarContainer {
+
+    margin: 0px 40px;
+    flex: 1;
+    display: flex;
+}
+
+#mastHeadContainer .searchBarContainer form {
+
+    flex: 1;
+    display: flex;
+    padding: 0px 40px;
+}
+
+#mastHeadContainer .searchBarContainer .searchBar{
+
+    flex: 1;
+    display: flex  ;
+    max-width: 600px;
+    margin: 6px 0px;
+    color: #111;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+    height: 32px;
+    box-shadow: #eee 0px 1px 2px 0px inset;
+}
+
+#mastHeadContainer .searchBarContainer .searchButton {
+
+    height: 32px;
+    margin: 6px 0px;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+    width: 65px;
+
+}
+
+#mastHeadContainer .searchBarContainer .searchButton img {
+
+    width: 100%;
+    height: 100%;
+    padding: 4px 15px;
+}
+
+#mastHeadContainer .end {
+    height: 100%;
+} 
+
+#mastHeadContainer .end .upload{
+
+    cursor: pointer;
+    width: 50px;
+    height: 45px;
+    margin: 0px 4px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    align-items: center;
+
+}
+
+#mastHeadContainer .end .profilePic{
+
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0px 4px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    align-items: center;
+
+}
+
+#mastHeadContainer .end .signInLink{
+
+    cursor: pointer;
+    border: 1px solid #007bff;
+    padding: 6px;
+    font-weight: 500;
+}
+
+#sideNavContainer{
+
+    width: 240px;
+    background-color: #f5f5f5;
+    padding-top: 56px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#mainSectionContainer{
+
+    padding-top: 56px;
+    display: flex;
+
+}
+
+#mainSectionContainer.leftPadding{
+
+    padding-left: 240px;;
+
+}
+
+#mainContentContainer{
+
+    padding: 10px 30px;
+    flex: 1;
+    display: flex;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.column {
+
+    flex: 1;
+    background-color: #fff;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: black #000 1px 2px;
+    /* display: flex; */
+}
+
+.watchLeftColumn {
+
+    flex: 1;
+}
+
+.watchLeftColumn .videoPlayer {
+
+    width: 100%;
+
+}
+
+.watchLeftColumn .videoInfo {
+    width: 100%;
+    padding: 20px 0px 8px 0px;
+    border-bottom: 1px solid #dedede ;
+}
+
+.watchLeftColumn .videoInfo h1{
+
+   display: block;
+   overflow: hidden;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.watchLeftColumn .videoInfo .bottomSection {
+
+    display: flex;
+}
+
+.watchLeftColumn .videoInfo .bottomSection .left {
+
+    flex: 1;
+}
+
+.videoInfo .bottomSection .viewsCount,.date{
+
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px;
+    flex: 1;
+}
+
+
+.suggestions {
+
+    max-width: 400px !important;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 24px;
+}
+
+.videoInfo .bottomSection .controls {
+
+    flex: 1;
+    text-align: right;
+}
+
+
+.videoInfo .bottomSection .controls button {
+
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: rgba(17, 17, 17, 0.4);
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+ }
+
+
+.videoInfo .bottomSection .controls button img{
+
+    height: 20px;
+    width: 20px;
+    margin: 4px 8px 8px 8px;
+}
+
+.secondaryInfo{
+    margin-top: 10px;
+    padding-top: 3px;
+    border-bottom: 1px solid #dedede ;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.secondaryInfo .topRow {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+/* .profilePic{
+    height: 100%;
+} */
+
+.secondaryInfo .topRow .profilePic{
+
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.secondaryInfo .topRow  .uploadInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.secondaryInfo .topRow  .uploadInfo .subscriberCount{
+
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.secondaryInfo .topRow  .uploadInfo .owner a{
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.secondaryInfo .descriptionContainer{
+
+    margin-left: 64px;
+    max-width: 615px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.secondaryInfo .topRow .subscribeButtonContainer,.editVideoButtonContainer{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.secondaryInfo .topRow button{
+
+    padding: 6px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+}
+
+.subscribeButtonContainer .subscribe{
+
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.subscribeButtonContainer .unsubscribe{
+
+    background-color: #eee;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.editVideoButtonContainer .edit{
+
+    background-color: #2692e6;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.commentSection .header{
+
+    margin-top: 15px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentSection .header .commentForm .profilePic,
+.commentSection .comment .profilePic {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.commentSection .header .commentCount{
+
+    margin-bottom: 18px;
+
+}
+
+.commentSection .header .commentForm,
+.itemContainer .commentForm {
+
+    display: flex;
+}
+
+.commentSection .header .commentForm textarea,
+.itemContainer .commentForm textarea{
+
+    display: flex;
+    flex: 1;
+    border: none;   
+    resize: none;
+    background-color: transparent;
+    border-bottom: 1px solid #dedede;
+    font-size: 14px;
+    color: #111;
+    cursor: text;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.itemContainer .commentForm textarea{
+
+    height: 30px;
+}
+
+.commentSection .header .commentForm button,
+.itemContainer .commentForm .postComment,
+.itemContainer .commentForm .cancelComment{
+
+    height: 36px;
+    background-color: #2692e6;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 0 15px;
+    border-radius: 2px;
+}
+
+.itemContainer .commentForm .cancelComment{
+
+    background-color: transparent;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.itemContainer .commentForm .cancelComment:hover{
+
+    color: #000;
+}
+
+.commentSection .itemContainer{
+
+    margin-bottom: 16px;
+
+}
+
+.commentSection .comment {
+    display: flex;
+
+}
+
+.commentSection .commentHeader{
+
+    margin-bottom: 2px;
+}
+
+.commentSection .comment .username{
+
+    margin-right: 8px;
+    color: #111;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.commentSection .comment .body{
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.itemContainer .controls{
+
+    margin-left: 64px;
+}
+
+.itemContainer .controls button,
+.itemContainer .controls .likesCount{
+
+    height: 32px;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight:500;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.itemContainer .controls button{
+
+    cursor: pointer;
+
+}
+
+.itemContainer .controls .likesCount{
+
+    margin: 0 5px;
+}
+
+.itemContainer .controls button img{
+
+    height: 16px;
+}
+
+.itemContainer .commentForm .profilePic{
+
+    width: 30px;
+    height: 30px;
+}
+
+.commentSection .comment .timestamp{
+
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.hidden{
+
+    display: none !important; 
+}
+
+.comments .repliesSection{
+    padding-left: 64px;
+    margin-top: 16px;
+}
+
+.commentSection .itemContainer .viewReplies{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.videoGrid{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suggestions .videoGridItem{
+
+    display: flex;
+    height: auto;
+}
+
+.videoGridItem{
+    height: 200px;
+    margin-right: 4px;
+    margin-bottom: 18px;
+}
+
+.videoGridItem  .thumbnail{
+    width: 168px;    /**/
+    height: 94px;
+    position: relative;
+}
+.suggestions .videoGridItem .thumbnail{
+
+    margin-right: 8px;
+
+}
+
+.videoGridItem  .thumbnail img{
+    width: 100%;
+    height: 100% ;
+}
+
+.videoGridItem .thumbnail .duration{
+
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 4px;
+    color: #fff;
+    background-color: rgba(17, 17, 17, 0.6);
+    opacity: 0.8;
+    padding: 2px 4px;
+    -webkit-border-before-width: 2px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+
+}
+
+.videoGridItem .details{
+
+     padding-right: 18px;
+     position: relative;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     max-width: 190px;
+}
+
+.suggestions .videoGridItem .details{
+
+    padding-right: 0px;
+    flex: 1;
+}
+
+.videoGridItem .details .title{
+
+    margin: 8px 0px;
+    max-height: 32px;
+    overflow:  hidden;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #212529;
+}
+
+.videoGridItem .details .username , .stats{
+
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 12px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.videoGridHeader {
+    /* display: flex; */
+    margin: 10px 0;
+    padding-bottom: 7px;
+    border-bottom:  1px solid #e8e8e8;
+}
+
+.videoGridHeader div{
+
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700 !important;
+}
+
+.videoGrid.medium {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videoGrid.medium .videoGridItem{
+
+     height: auto;
+     display: flex;
+     flex-direction: column;
+}
+
+.videoGrid.medium .videoGridItem .thumbnail{
+
+    width: 265px;
+    height: 150px;
+    margin-right: 16px;
+}
+
+.videoGrid.medium .videoGridItem .down{
+    display: flex;
+    flex-direction: row;
+}
+
+.videoGrid.medium .videoGridItem .down .mediumProfile img{
+
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 4pxpx;
+}
+
+.videoGrid.medium .videoGridItem .details{
+
+    /* max-width: 600px !important;
+    /* display: flex; */
+    /* flex: 1; */ 
+    padding-right: 18px;
+     position: relative;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     max-width: 190px;
+}
+
+.videoGrid.medium .videoGridItem .details .title{
+
+    /* font-size: 18px;
+    line-height: 24px; */
+    margin: 8px 0px;
+    max-height: 32px;
+    overflow:  hidden;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #212529;
+}
+
+.videoGrid.large {
+    flex-direction: column;
+    flex: 1;
+}
+
+.videoGrid.large .videoGridItem{
+
+     height: auto;
+     display: flex;
+}
+
+.videoGrid.large .videoGridItem .thumbnail{
+
+    width: 246px;
+    height: 137.64px;
+    margin-right: 16px;
+}
+
+.videoGrid.large .videoGridItem .details{
+
+    max-width: 600px !important;
+    /* display: flex; */
+    flex: 1;
+}
+
+.videoGrid.large .videoGridItem .details .title{
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.videoGridItem .details .description{
+
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.largeVideoGridContainer{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoGridHeader .right{
+
+    font-weight: 500;
+    padding-left: 16px;
+}
+
+.videoGridHeader a{
+
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.videoGridHeader a:after{
+    content: ' |';
+}
+
+.videoGridHeader a:last-child:after{
+    content: '';
+}
+
+#sideNavContainer .navigationItems{
+
+    overflow-y: auto;
+}
+
+#sideNavContainer .navigationItem{
+
+    height: 40px;
+    display: flex;
+    margin: 3px 0;
+}
+
+#sideNavContainer .navigationItem img{
+
+    height: 18px;
+    margin-right: 27px;
+}
+
+#sideNavContainer .navigationItem span{
+
+   flex: 1;
+   color: #111;
+   font-size: 14px;
+}
+
+#sideNavContainer .navigationItem a{
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#sideNavContainer .navigationItem a:hover{
+
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+#sideNavContainer .heading{
+
+    color: rgba(17, 17, 17, 0.6);
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #ededed;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.coverPhotoContainer{
+
+    height: 200px;
+    flex: 1;
+}
+
+.coverPhotoContainer .coverPhoto{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.profileHeader {
+
+    padding: 15px 100px 0 100px;
+    display: flex;
+    height: 100px;
+
+}
+
+.userInfoContainer{
+    flex: 1;
+    display: flex;
+}
+
+.profileHeader .userInfoContainer .profileImage{
+
+    height: 80px;
+    width: 80px;
+
+}
+
+.profileHeader .userInfo{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.profileHeader .userInfo .title{
+
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+}
+
+.profileHeader .userInfo .subscriberCount{
+
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.6);
+    
+}
+
+.profileHeader .buttonContainer{
+
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profileHeader .buttonContainer .buttonItem{
+    align-items: center;
+    display: flex;
+}
+
+.profileHeader .buttonContainer .buttonItem button{
+
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.profileContainer .channelContent{
+
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.nav-item a{
+    color: rgba(17, 17, 17, 0.6);
+    font-weight: 500;
+}
+
+.channelContent .section .values{
+
+    color: rgba(17, 17, 17, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.formSection:not(:last-child) {
+
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dedede;
+}
+
+.settingsContainer .title {
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .settingsContainer form{
+     
+    width: 80%;
+    margin
+} */
+
+.editVideoContainer{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.editVideoContainer .topSection{
+    display: flex;
+}
+
+.topSection .videoPlayer{
+
+    max-height: 400px;
+    flex: 1;
+}
+
+.editVideoContainer .topSection .thumbnailItemsContainer{
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 210px;  
+}
+
+.editVideoContainer .topSection .thumbnailItemsContainer .thumbnailItem{
+
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.editVideoContainer .topSection .thumbnailItemsContainer .thumbnailItem.selected{
+
+    border: 3px solid #828282;
+}
+
+.editVideoContainer .topSection .thumbnailItemsContainer .thumbnailItem img{
+
+    width: 100%;
+    cursor: pointer;
+}
+
+.thumbnailItemsContainer .heading{
+
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#mainContentContainer .uploadSuccessfulContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+#mainContentContainer .uploadSuccessfulContainer .topSection{
+    height: 250px;
+}
+
+#mainContentContainer .uploadSuccessfulContainer .topSection img{
+
+    height: 250px;
+    background-color: #fafafa;
+}
+
+#mainContentContainer .uploadSuccessfulContainer .bottomSection{
+
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
